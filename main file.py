@@ -157,7 +157,7 @@ def scraper():
 
         #stream all data with the search terms in strings
         twitterStream = Stream(auth, listener(), tweet_mode='extended')
-        twitterStream.filter(track=['bitcoin','#bitcoin','$bitcoin','$btc', '#btc', 'btc'], languages=['en'])
+        twitterStream.filter(track=['queryterm1', 'queryterm2'], languages=['en'])
 
     except:
         print("error3")
